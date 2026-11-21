@@ -54,6 +54,15 @@ ul {
 li {
   list-style-type: none;
 }
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  text-align: center;
+  border: none;
+  color: #7342d6;
+  display: none;
+}
+
 .nav__link {
   text-decoration: none;
   margin-left: 16px;
@@ -132,6 +141,14 @@ button {
 }
 button:active {
   transform: translateY(1px);
+}
+.btn__menu {
+  display: none;
+}
+.menu__backdrop {
+  overlay: fixed;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .btn {
@@ -225,7 +242,7 @@ HIGHLIGHTS
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 32px;
   margin-bottom: 24px;
 }
 .highlight__subtitle {
@@ -330,21 +347,21 @@ footer {
 
 .footer__link,
 .footer__copyright {
-  color: white;
+  color: #ffffff;
 }
 
 .footer__link {
   padding: 0 8px;
   position: relative;
 }
-.footer__link:hover::after {
+.footer__link::after {
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
   background-color: currentColor;
   left: 50%;
-  bottom: 0;
+  bottom: -4px;
   transform: translateX(-50%);
   transition: width 300ms ease;
 }
@@ -352,6 +369,27 @@ footer {
   text-decoration: none;
 }
 
-.footer__link::after:hover {
+.footer__link:hover::after {
   width: 76%;
+}
+/* 
+
+MEDIA QUERIES
+
+
+*/
+/* 
+
+RESPONSIVENSS PHONES
+
+
+*/
+
+@media (max-width: 550px) {
+  .nav__links {
+    display: none;
+  }
+  .btn__menu {
+    display: block;
+  }
 }
