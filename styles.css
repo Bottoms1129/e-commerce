@@ -146,9 +146,10 @@ button:active {
   display: none;
 }
 .menu__backdrop {
-  overlay: fixed;
+  display: fixed;
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 
 .btn {
