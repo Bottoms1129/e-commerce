@@ -418,3 +418,12 @@ RESPONSIVENSS PHONES
     display: block;
   }
 }
+.btn__menu {
+  display: none;
+}
+.menu--open,
+.menu__backdrop {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
