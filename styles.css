@@ -390,7 +390,7 @@ footer {
 }
 .footer__logo {
   width: 160px;
-  filter: grayscale(1) invert(1);
+  filter: brightness(0) invert(1);
   margin-bottom: 8px;
   transition: filter 300ms ease;
 }
@@ -482,5 +482,9 @@ RESPONSIVENSS PHONES
 
   .highlight:not(:last-child) {
     margin-bottom: 24px;
+  }
+  .highlight__wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }
